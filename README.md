@@ -54,8 +54,11 @@ i put it to help those who read this project to know some important required lib
 
 ![Screenshot 2024-06-22 172300](https://github.com/Tresorndala/TRESORNDALABUZANGU._SportsPrediction/assets/169275280/260cbe4b-a91d-4a08-b8ec-42f082e2e605)
 
+![image](https://github.com/Tresorndala/TRESORNDALABUZANGU._SportsPrediction/assets/169275280/c88033ca-7a68-4584-a949-81e907918801)
 
-![Screenshot 2024-06-22 172720](https://github.com/Tresorndala/TRESORNDALABUZANGU._SportsPrediction/assets/169275280/f1e7c857-9a5f-4148-bd5c-b7f8a3256d02)
+
+
+
 
 
 # Goal of the application in the source_code_of_the_model_deployment.py
