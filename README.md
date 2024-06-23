@@ -2,7 +2,7 @@
 
 This repository named TRESORNDALA._SportsPrediction is meant for predicting the overall score of football players based on 7 high importances features that were chosen having high correlation but not only that but also from the impact of per example prefered foot of a player even though not having high correlation with overall score when we calculated but as it is very important to determine the performance of a player as we know that a player playing at the left performance will be very different if put at the right ,we took it and enconded it and scaled it . to understand well i will give the link .
 
- ## Here is the link to the project deployment:
+ ## Here is the link to the Video demonstrating how my web page works:
      
             
 
@@ -13,6 +13,13 @@ This repository named TRESORNDALA._SportsPrediction is meant for predicting the 
 
 
  
+
+
+
+
+
+
+
 
 
 # Repository content
