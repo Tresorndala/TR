@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 from sklearn.ensemble import GradientBoostingRegressor
 
-# Define the path to your .pkl files
+# Define the path to my .pkl files
 model_path = '/content/drive/MyDrive/Colab Notebooks/GradientBoosting.pkl'
 scaler_path = '/content/drive/MyDrive/scaler.pkl'
 
