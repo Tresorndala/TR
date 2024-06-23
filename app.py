@@ -1,8 +1,8 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+from sklearn.ensemble import GradientBoostingRegressor
 
 # Define the path to your .pkl files
 model_path = '/content/drive/MyDrive/Colab Notebooks/GradientBoosting.pkl'
@@ -11,15 +11,13 @@ scaler_path = '/content/drive/MyDrive/scaler.pkl'
 # Load the model
 @st.cache_resource
 def load_model(model_path):
-    with open(model_path, 'rb') as f:
-        model = joblib.load(f)
+    model = joblib.load(model_path)
     return model
 
 # Load the scaler
 @st.cache_resource
 def load_scaler(scaler_path):
-    with open(scaler_path, 'rb') as f:
-        scaler = joblib.load(f)
+    scaler = joblib.load(scaler_path)
     return scaler
 
 # Function to preprocess input data
@@ -40,8 +38,24 @@ def predict_rating(model, scaler, preferred_foot, potential, age, shooting, pass
     input_data = preprocess_input(preferred_foot, potential, age, shooting, passing, physic, movement_reactions, scaler)
     st.write(f"Preprocessed and scaled input data shape: {input_data.shape}, data: {input_data}")
 
+    # Access the actual model if it is a pipeline
+    if hasattr(model, 'named_steps'):
+        model = model.named_steps['regressor']
+
+    # Prediction
     prediction = model.predict(input_data)[0]
-    return prediction
+
+    # Confidence estimation for GradientBoostingRegressor
+    if isinstance(model, GradientBoostingRegressor):
+        if hasattr(model, 'estimators_'):
+            stage_predictions = np.array([sum(est.predict(input_data) for est in stage) for stage in model.estimators_]) / len(model.estimators_)
+            confidence = np.std(stage_predictions)
+        else:
+            confidence = 0.0  # Default value if confidence cannot be calculated
+    else:
+        confidence = 0.0  # Default value if confidence cannot be calculated
+
+    return prediction, confidence
 
 # Streamlit application
 def main():
@@ -64,8 +78,9 @@ def main():
     # Predict button
     if st.button('Predict'):
         try:
-            prediction = predict_rating(model, scaler, preferred_foot, potential, age, shooting, passing, physic, movement_reactions)
+            prediction, confidence = predict_rating(model, scaler, preferred_foot, potential, age, shooting, passing, physic, movement_reactions)
             st.success(f'Predicted Overall Rating: {prediction:.2f}')
+            st.info(f'Confidence of Prediction: ±{confidence:.2f}')
         except Exception as e:
             st.error(f'Error predicting: {e}')
 
