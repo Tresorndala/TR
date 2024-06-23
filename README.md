@@ -25,13 +25,35 @@ This repository named TRESORNDALA._SportsPrediction is meant for predicting the 
 # Repository content
 
 It contains the following files:
-TRESOR NDALA BUZANGU._SportsPrediction.ipynb: A Google Colab notebook.
+# TRESOR NDALA BUZANGU._SportsPrediction.ipynb 
 
-TRESOR NDALA BUZANGU._SportsPrediction.py: The Python version of the Colab notebook.
+A Google Colab notebook.
 
-source_code_of_the_model_deployment.py : The source code for the model deployment that helped us to deploy through stremlit.
+# TRESOR NDALA BUZANGU._SportsPrediction.py
 
-A youtube link to a video demonstrating how the web page works and a link of my streamlit app that i used for the functionality of my web page .
+The Python version of the Colab notebook.
+
+# source_code_of_the_model_deployment.py 
+
+
+The source code for the model deployment that helped us to deploy through stremlit.
+
+
+# A youtube link to a video demonstrating how my web page works .
+ # https://youtu.be/FypNmDWctS0
+
+after doing my application deployment to streamlit i recorded this video to show how it works.
+#Gradient.skl and scaler.skl 
+
+after training my model i downloaded these two and they served me in my application to scale the inputs entered by the users scaler.skl and to predict the model gradient.skl
+# requirements.txt 
+
+i put it to help those who read this project to know some important required library to deploy my model as i did.
+
+# Gradient.skl performance
+
+![Screenshot 2024-06-22 172720](https://github.com/Tresorndala/TRESORNDALABUZANGU._SportsPrediction/assets/169275280/f1e7c857-9a5f-4148-bd5c-b7f8a3256d02)
+
 
 # Goal of the application in the source_code_of_the_model_deployment.py
 
