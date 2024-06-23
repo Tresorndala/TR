@@ -4,8 +4,7 @@ This repository named TRESORNDALA._SportsPrediction is meant for predicting the 
 
      ## Here is the link to the project deployment
      
-               [ https://youtu.be/FypNmDWctS0
-                ](url)
+            # [Repository content](https://youtu.be/FypNmDWctS0)
 
 
 
