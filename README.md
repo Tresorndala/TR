@@ -7,7 +7,7 @@ This repository named TRESORNDALA._SportsPrediction is meant for predicting the 
             # [Repository content](https://youtu.be/FypNmDWctS0)
 
 
- # [Repository content](https://youtu.be/FypNmDWctS0)
+ # https://youtu.be/FypNmDWctS0
 
 
 # Repository content
