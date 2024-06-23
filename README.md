@@ -1,5 +1,8 @@
-# TRESORNDALA._SportsPrediction
-This repository is meant for the football prediction overall score of players in football
-this GitHub Repository having name as TRESORNDALA._SportsPrediction contains the pushed following files Google Colab named as TRESOR NDALA BUZANGU._SportsPrediction.ipynb The Python version of MY Colab NAMED .PY AND THE Source code(s) for the model deployment NAMED AS sourcecode and a Video demonstrating how my web page works
+TRESORNDALA._SportsPrediction
+This repository is meant for predicting the overall score of football players. It contains the following files:
 
-This is an application meant to predict the overall performance of a player based on specific characeriselected from a rigorous process of forst having a understanding correlwoth the oveof the player and most imbeing
+TRESOR NDALA BUZANGU._SportsPrediction.ipynb: A Google Colab notebook.
+MY_Colab.py: The Python version of the Colab notebook.
+sourcecode: The source code for the model deployment.
+A video demonstrating how the web page works.
+This application predicts the overall performance of a player based on specific characteristics selected from a rigorous process of understanding and correlating various factors that impact a player's performance.
