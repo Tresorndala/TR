@@ -52,6 +52,9 @@ i put it to help those who read this project to know some important required lib
 
 # Gradient.skl performance
 
+![Screenshot 2024-06-22 172300](https://github.com/Tresorndala/TRESORNDALABUZANGU._SportsPrediction/assets/169275280/260cbe4b-a91d-4a08-b8ec-42f082e2e605)
+
+
 ![Screenshot 2024-06-22 172720](https://github.com/Tresorndala/TRESORNDALABUZANGU._SportsPrediction/assets/169275280/f1e7c857-9a5f-4148-bd5c-b7f8a3256d02)
 
 
